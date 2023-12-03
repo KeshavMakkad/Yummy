@@ -16,19 +16,18 @@
         <nav id="navbar">
             <div class="Logo">
                 <span class="logo_text">Lorem_Ipsum</span>
-                <span class="dot logo_text"></span>
+                <span class="dot"></span>
             </div>
             <div class="nav_list">
-                <span class="list_item"><a href="#home">Home</a></span>
-                <span class="list_item">Menu</span>
-                <span class="list_item">Events</span>
-                <span class="list_item">Chefs</span>
-                <span class="list_item">Gallery</span>
-                <span class="list_item">Drop Down</span>
-                <span class="list_item">Contact</span>
+                <span class="list_item"><a href="#home" style="text-decoration: none;">Home</a></span>
+                <span class="list_item"><a href="#Menu" style="text-decoration: none;">Menu</a></span>
+                <span class="list_item"><a href="#Events" style="text-decoration: none;">Events</a></span>
+                <span class="list_item"><a href="#Chefs" style="text-decoration: none;">Chefs</a></span>
+                <span class="list_item"><a href="#Contact" style="text-decoration: none;">Contact</a></span>
+                <span class="list_item"><a href="#Gallery" style="text-decoration: none;">Gallery</a></span>
             </div>
-
             <button class="book_table_text">Book a Table</button>
+            
         </nav>
     </header>
     <section class="home" id="home">
@@ -38,8 +37,14 @@
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aspernatur
                 ipsam veniam quas placeat quam aperiam.
             </p>
-            <div>
+            <div class="home-buttons">
                 <button class="body_button book_table_text">Book A Table</button>
+                <a href="https://www.youtube.com/@NickDiGiovanni" target="_blank" class="home-play-buttons">
+                    <span class="material-symbols-outlined home-play-icon">
+                        play_circle
+                    </span>
+                    <spa class="home-play-text">Play Video</span>
+                </a>
             </div>
         </div>
         <img src="stats-bg.jpg" alt="Image of food not found" class="home_img" />
@@ -60,20 +65,28 @@
                     hic facilis vel maiores voluptatibus sed dolore minima iste modi
                     voluptas?
                 </p>
-                <p>
+                <span class="material-symbols-outlined about-us-double-tick">
+                    done_all
+                </span><span class="ticked-p">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae,
                     a!
-                </p>
-                <p>
+                </span>
+                <br>
+                <span class="material-symbols-outlined about-us-double-tick">
+                    done_all
+                </span><span class="ticked-p">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla,
                     quia?
-                </p>
-                <p>
+                </span>
+                <br>
+                <span class="material-symbols-outlined about-us-double-tick">
+                    done_all
+                </span><span class="ticked-p">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum
                     incidunt sequi saepe voluptate officiis sapiente blanditiis. Aut
                     placeat asperiores quod illum, eius accusamus mollitia. Dignissimos
                     cumque enim quis earum quo!
-                </p>
+                </span>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde
                     facere incidunt sapiente nemo dolorem? Magnam, soluta officia
@@ -81,7 +94,14 @@
                     assumenda illum. Fuga magni autem odit maiores optio consectetur
                     eius libero quam nobis, repudiandae harum.
                 </p>
-                <img src="about-2.jpg" />
+                <div class="about-us-icon-image" style="position: relative">
+                    <a href="https://www.youtube.com/@NickDiGiovanni" target="_blank">
+                        <span class="material-symbols-outlined about-us-play-icon">
+                            play_circle
+                        </span>
+                    </a>
+                    <img src="about-2.jpg" />
+                </div>
             </div>
         </div>
     </section>
@@ -295,7 +315,7 @@
             </div>
         </div>
     </section>
-    <section class="chefs-section">
+    <section class="chefs-section" id="Chefs">
         <div class="header">
             <p class="about_us_h2" style="color: gray">Our Chefs</p>
             <p class="learn_more">
@@ -343,7 +363,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="Contact">
         <div class="header">
             <p class="about_us_h2" style="color: gray">Book a table</p>
             <p class="learn_more">
@@ -370,7 +390,7 @@
             </div>
         </div>
     </section>
-    <section class="gallery" id="gallery">
+    <section class="gallery" id="Gallery">
         <div class="header">
             <p class="about_us_h2" style="color: gray">Gallery</p>
             <p class="learn_more">
@@ -474,7 +494,7 @@
             </div>
             <div class="credits">
                 Designed by <a href="https://instagram.com/keshavmakkad_">Keshav</a>
-              </div>
+            </div>
         </div>
     </footer>
 </body>

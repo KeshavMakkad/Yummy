@@ -11,11 +11,14 @@ nav {
   position: fixed;
   background-color: white;
   overflow: hidden;
-  position: fixed;
-  top: 0;
+  top: 0px;
   width: 100%;
   padding: 1rem 0;
   z-index: 100;
+}
+.nav_list span a:visited{
+  text-decoration: none;
+  color:gray ;
 }
 
 .logo_text {
@@ -37,7 +40,7 @@ nav {
   font-size: larger;
   font-weight: bold;
   font-family: sans-serif;
-  color: gray;
+  color: gray !important;
 }
 
 .list_item:hover {
@@ -68,7 +71,31 @@ nav {
 .home {
   padding: 4rem 4rem;
 }
-
+.home-buttons{
+  display:flex;
+  align-items: center;
+}
+.home-play-buttons{
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+.home-play-icon{
+  font-size: 3rem !important;
+  color: red;
+  padding: 0 1rem 0 2rem;
+  text-decoration: none;
+  
+}
+.home-play-buttons:visited{
+  text-decoration: none;
+}
+.home-play-text{
+  font-size: 1.5rem;
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+}
 .home {
   display: flex;
   background-color: orange;
@@ -129,11 +156,35 @@ nav {
   font-size: large;
 }
 
-.about-us-info div img {
-  width: 100%;
-  /* height: 50%; */
-  position: static;
-  padding: 1rem;
+.about-us-icon-image span {
+  position: absolute;
+  /* left: 50; */
+  right: 45%;
+  top: 45%;     
+}
+.about-us-double-tick{
+    font-size: large !important;
+    color: red;
+    font-weight: lighter !important;
+}
+.about-us-play-icon {
+    color: white;
+    background-color: rgba(255, 0, 0, 1);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 250% !important;
+    text-align: center;
+  }
+
+.about-us-icon-image img {
+    position: absolute;
+    /* height: auto; */
+    width: 100%;
+    position: static;
+  }
+
+.about-us-why-us .why-us .why-us-tabs * {
+  padding: 1rem 1rem;
 }
 
 .about-us {
@@ -179,8 +230,13 @@ nav {
     flex-direction: column; */
 }
 
-.about-us-why-us .why-us .why-us-tabs * {
-  padding: 1rem 1rem;
+.about-us-play-icon {
+  color: white;
+  background-color: rgba(255, 0, 0, 1);
+  border-radius: 50%;
+  padding: 8px;
+  font-size: 250% !important;
+  text-align: center;
 }
 
 .stats-bar {
@@ -307,7 +363,7 @@ nav {
 .book-stay div {
   background-color: lightgray;
   display: flex;
-  align-items:center;
+  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   /* height: 100%; */
@@ -321,17 +377,17 @@ nav {
   color: gray;
   padding: 0.5rem;
 }
-div textarea{
-    margin: 2.5rem;
-    width: 100% !important;
-    height: 6rem;
+div textarea {
+  margin: 2.5rem;
+  width: 100% !important;
+  height: 6rem;
 }
-.book-stay div div{
-    display: flex;
-    justify-content: space-evenly;
+.book-stay div div {
+  display: flex;
+  justify-content: space-evenly;
 }
-.input:active{
-    border: 1px solid red;
+.input:active {
+  border: 1px solid red;
 }
 .vertical-line {
   background-color: red;
@@ -463,7 +519,7 @@ div textarea{
   border-radius: 50%;
   margin: 0 5px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: red 0.3s ease;
 }
 
 .contact-div {
@@ -490,47 +546,47 @@ div textarea{
 .contact-info-description {
   font-size: small;
 }
-.footer{
-    background-color: black;
+.footer {
+  background-color: black;
 }
-.footer-top-div{
-    padding: 3rem;
-    display: flex;
-    justify-content: center;
-    background-color: black;
+.footer-top-div {
+  padding: 3rem;
+  display: flex;
+  justify-content: center;
+  background-color: black;
 }
-footer div{
-    padding: 0  2rem;
-    color: gray;
+footer div {
+  padding: 0 2rem;
+  color: gray;
 }
-.footer-image{
-    height: 30px;
-    width: 30px;
+.footer-image {
+  height: 30px;
+  width: 30px;
 }
-.social-links{
-    display: flex;
-    justify-content: flex-end;
-    padding: 6px;
+.social-links {
+  display: flex;
+  justify-content: space-around;
+  margin: 6px;
 }
-.footer h4{
-    display: inline-block;
-    padding: 1rem;
-    font-size: x-large;
-    font-weight: bolder;
-    margin: 0 1rem 0 0;
+.footer h4 {
+  display: inline-block;
+  padding: 1rem;
+  font-size: x-large;
+  font-weight: bolder;
+  margin: 0 1rem 0 0;
 }
-.footer-bottom-div{
-    padding: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.footer-bottom-div {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.copyright span{
-    font-weight: bolder;
+.copyright span {
+  font-weight: bolder;
 }
-.credits a{
-    text-decoration: none;
-    color: gray;
-    font-weight: 1000;
+.credits a {
+  text-decoration: none;
+  color: gray;
+  font-weight: 1000;
 }
