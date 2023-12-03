@@ -132,8 +132,8 @@ nav {
 
 .learn_more {
   font-size: xx-large;
-}
 
+}
 .learn_more span {
   color: red;
 }
@@ -565,8 +565,10 @@ footer div {
 }
 .social-links {
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
   margin: 6px;
+  gap: 16px;
+  padding: 1em;
 }
 .footer h4 {
   display: inline-block;
